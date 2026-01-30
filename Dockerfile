@@ -12,5 +12,5 @@ RUN apk update && apk add tailscale ca-certificates iptables ip6tables && rm -rf
 
 RUN mkdir -p /var/run/tailscale /var/cache/tailscale /var/lib/tailscale
 
-RUN chmod +x start.sh
-CMD ["/root/start.sh"]
+RUN chmod +x ./start.sh
+CMD ["./start.sh"]
